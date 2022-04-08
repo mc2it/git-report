@@ -1,0 +1,35 @@
+{
+	"bugs": "https://github.com/mc2it/git-report/issues",
+	"description": "TODO",
+	"homepage": "https://github.com/mc2it/git-report",
+	"license": "MIT",
+	"name": "@mc2it/git-report",
+	"private": true,
+	"repository": "github:mc2it/git-report",
+	"type": "commonjs",
+	"version": "0.1.0",
+	"author": {
+		"email": "dev@mc2it.com",
+		"name": "MC2IT",
+		"url": "https://mc2it.com"
+	},
+	"bin": {
+		"mc2it_git": "bin/mc2it_git.js"
+	},
+	"contributors": [
+		{
+			"email": "cedric@belin.io",
+			"name": "Cédric Belin",
+			"url": "https://belin.io"
+		}
+	],
+	"dependencies": {
+		"@actions/core": "^1.6.0"
+	},
+	"devDependencies": {
+		"@vercel/ncc": "^0.33.3"
+	},
+	"engines": {
+		"node": ">=16.0.0"
+	}
+}
