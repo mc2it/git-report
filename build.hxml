@@ -1,0 +1,3 @@
+--js bin/mc2it_git.js
+--main mc2it_git.Program
+share/build.hxml
