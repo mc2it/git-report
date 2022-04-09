@@ -15,6 +15,10 @@ inputs:
     description: The message sender.
     default: actions@github.com
     required: false
+  language:
+    description: The TODO language.
+    default: 25
+    required: false
   port:
     description: The SMTP port.
     default: 25
