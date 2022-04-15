@@ -6,36 +6,36 @@ branding:
   color: orange
   icon: send
 
-inputs:
-  host:
-    description: The SMTP host.
-    default: localhost
-    required: false
-  from:
-    description: The message sender.
-    default: actions@github.com
-    required: false
-  language:
-    description: The TODO language.
-    default: 25
-    required: false
-  port:
-    description: The SMTP port.
-    default: 25
-    required: false
-  password:
-    description: The SMTP password.
-    required: false
-  sender:
-    description: The message sender.
-    default: GitHub Actions
-    required: false
-  to:
-    description: The message recipients.
-    required: true
-  username:
-    description: The SMTP username.
-    required: false
+# inputs:
+#   host:
+#     description: The SMTP host.
+#     default: localhost
+#     required: false
+#   from:
+#     description: The message sender.
+#     default: actions@github.com
+#     required: false
+#   language:
+#     description: The TODO language.
+#     default: 25
+#     required: false
+#   port:
+#     description: The SMTP port.
+#     default: 25
+#     required: false
+#   password:
+#     description: The SMTP password.
+#     required: false
+#   sender:
+#     description: The message sender.
+#     default: GitHub Actions
+#     required: false
+#   to:
+#     description: The message recipients.
+#     required: true
+#   username:
+#     description: The SMTP username.
+#     required: false
 
 runs:
   using: node16

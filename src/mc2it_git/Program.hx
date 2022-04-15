@@ -6,6 +6,7 @@ import js.actions.GitHub;
 /** Application entry point. **/
 function main() {
 	final version = Core.getInput("version");
+	trace(GitHub);
 	trace(GitHub.context);
 }
 
