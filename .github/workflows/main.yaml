@@ -6,18 +6,18 @@ jobs:
     steps:
       - name: Send notification
         uses: mc2it/git-report@main
-      - name: Fetch sources
-        uses: actions/checkout@v3
-      - name: Set up Lix
-        uses: lix-pm/setup-lix@master
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          cache: npm
-          node-version: 16
-      - name: Install dependencies
-        run: |
-          lix download
-          npm install
-      - name: Run tests
-        run: haxe test.hxml
+      # - name: Fetch sources
+      #   uses: actions/checkout@v3
+      # - name: Set up Lix
+      #   uses: lix-pm/setup-lix@master
+      # - name: Set up Node.js
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     cache: npm
+      #     node-version: 16
+      # - name: Install dependencies
+      #   run: |
+      #     lix download
+      #     npm install
+      # - name: Run tests
+      #   run: haxe test.hxml
