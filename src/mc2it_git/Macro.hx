@@ -1,4 +1,4 @@
-package setup_hashlink;
+package mc2it_git;
 
 #if macro
 import haxe.macro.Compiler;
