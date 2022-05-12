@@ -1,4 +1,0 @@
---js bin/mc2it_git.js
---macro mc2it_git.Macro.shebang('node')
---main mc2it_git.Program
-share/build.hxml
