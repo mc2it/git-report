@@ -39,4 +39,4 @@ branding:
 
 runs:
   using: node16
-  main: bin/mc2it_git.js
+  main: bin/mc2it_git.mjs
