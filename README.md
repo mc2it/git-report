@@ -1,5 +1,5 @@
 # MC2IT Git Report
-![Release](https://badgen.net/badge/action/v0.1.0/blue) ![License](https://badgen.net/badge/license/MIT/blue) ![Coverage](https://badgen.net/coveralls/c/github/mc2it/git-report) ![Build](https://badgen.net/github/checks/mc2it/git-report)
+![Runtime](https://badgen.net/badge/node/%3E%3D16.0.0/green) ![Release](https://badgen.net/badge/action/v0.1.0/blue) ![License](https://badgen.net/badge/license/MIT/blue) ![Coverage](https://badgen.net/coveralls/c/github/mc2it/git-report)
 
 TODO
 
