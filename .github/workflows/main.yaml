@@ -4,20 +4,29 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Fetch sources
+        uses: actions/checkout@v3
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: npm
+          node-version: 18
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+      - name: Collect code coverage
+        if: success()
+        uses: codecov/codecov-action@v2
+        with:
+          files: var/lcov.info
+  action:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
       - name: Send notification
         uses: mc2it/git-report@main
-      # - name: Fetch sources
-      #   uses: actions/checkout@v3
-      # - name: Set up Lix
-      #   uses: lix-pm/setup-lix@master
-      # - name: Set up Node.js
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     cache: npm
-      #     node-version: 18
-      # - name: Install dependencies
-      #   run: |
-      #     lix download
-      #     npm install
-      # - name: Run tests
-      #   run: haxe test.hxml
+        with:
+          from: ${{secrets.MAIL_ADDRESS}}
+          smtp: ${{secrets.SMTP_URL}}
+          to: ${{secrets.MAIL_ADDRESS}}

@@ -39,6 +39,11 @@ export async function publish() {
 	for (const command of [["tag"], ["push", "origin"]]) await exec("git", [...command, `v${pkg.version}`]);
 }
 
+/** Runs the test suite. */
+export function test() {
+	return exec("c8", ["--all", "--include=lib/**/*.js", "--report-dir=var", "--reporter=lcovonly", "node_modules/.bin/mocha", "--recursive"]);
+}
+
 /** Updates the version number in the sources. */
 export function version() {
 	return gulp.src("README.md").pipe(replace(/action\/v\d+(\.\d+){2}/, `action/v${pkg.version}`)).pipe(gulp.dest("."));

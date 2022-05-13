@@ -3,18 +3,24 @@ description: TODO
 author: MC2IT
 
 branding:
-  color: orange
+  color: yellow
   icon: send
 
-# inputs:
+inputs:
+  from:
+    description: The message sender.
+    required: true
+  smtp:
+    description: The URL of the SMTP server.
+    required: true
+  to:
+    description: The message recipients.
+    required: true
+
 #   host:
 #     description: The SMTP host.
 #     default: localhost
-#     required: false
-#   from:
-#     description: The message sender.
-#     default: actions@github.com
-#     required: false
+#     required: true
 #   language:
 #     description: The TODO language.
 #     default: 25
