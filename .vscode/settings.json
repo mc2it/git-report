@@ -4,7 +4,7 @@
 	"files.encoding": "utf8",
 	"files.insertFinalNewline": true,
 	"files.trimTrailingWhitespace": true,
-	"[jade]": {"files.trimTrailingWhitespace": false},
 	"[markdown]": {"files.trimTrailingWhitespace": false},
+	"[pug]": {"files.trimTrailingWhitespace": false},
 	"[yaml]": {"editor.insertSpaces": true}
 }
